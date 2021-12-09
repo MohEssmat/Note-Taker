@@ -1,47 +1,76 @@
-# Note Taker
+# Express-Note-Taker
 
-An application to write and save note with Express.js back end and will save and retrieve note data from JSON file.
+Express Note Taker
 
-### Github : https://github.com/MohEssmat/note-taker
-
-### Deployed app: http://note-taker-90210.herokuapp.com/
-
-## Description
-
-An application to write and save note with Express.js back end and will save and retrieve note data from JSON file.
-
-## User Story
+The purpose of this project was to build an application that can write, save, and delete notes using an express backend to save and retrieve note data from a JSON file. The project user story is below.
 
 ```
-- AS A small business owner
-- I WANT to be able to write and save notes
-- SO THAT I can organize my thoughts and keep track of tasks I need to complete
+AS A user, I want to be able to write and save notes
+
+I WANT to be able to delete notes I've written before
+
+SO THAT I can organize my thoughts and keep track of tasks I need to complete
 ```
 
-## Usage
+The criteria for a successful project are below:
 
-- Application will allow user to be able to add note's title and description
-- Application will allow user to be able to save the notes and won't lose them even they refresh the page
-- Application will allow user to be delete notes
+- Application should allow users to create and save notes.
 
-## Screenshots
+- Application should allow users to view previously saved notes.
 
-![](public/assets/img/NoteTaker_LP.png)
-![](public/assets/img/NoteTaker_WriteNotes.png)
-![](public/assets/img/NoteTaker_SavedNotes.png)
+- Application should allow users to delete previously saved notes.
 
-## Technologies Use
+## Getting Started
 
-<p><a href="https://nodejs.org/">Node.js</a></p>
-<p><a href="https://www.npmjs.com/">NPM</a></p>
-<p><a href="https://www.npmjs.com/package/express">Express.js</a></p>
-<p><a href="https://www.npmjs.com/package/inquirer">Inquirer.js</a></p>
-<p><a href="https://www.npmjs.com/package/uuid">uuid</a></p>
-<p><a href="https://getbootstrap.com/">Bootstrap</a></p>
-<p><a href="https://fonts.google.com/">Google Fonts</a></p>
+The deployed project should look like this:
 
-## Contributor:
+[![Deployed Project](ExpressNoteTakerSS.png)]
 
-Mohamed Essmat ©2021 All Rights Reserved.
+Below is the link to the project repository, a link to the deployed application on Heroku.
 
----
+https://github.com/MohEssmat/note-taker
+
+https://shrouded-chamber-01100.herokuapp.com/
+
+### Development
+
+Below are the steps I took to create the application as it is so far. The most difficult aspect of this application for me was using a constructor to cover all aspects of the notes (writing, reading, saving, deleting).
+
+1. Created and linked the initial files (JS files, HTML files, JSON files).
+
+2. Downloaded all dependecies using npm.
+
+3. Created all routes and verified them with small tests using Postman.
+
+4. Created a constructor which contained functions for each element of the notes (writing, reading, saving, deleting).
+
+5. Verify the functionality of the application, then deploy to Heroku.
+
+## Testing
+
+This application was not developed using Test Driven Development. However, at numerous points throughout development, console.log's were used to test the results of new elements.
+
+## Deployment
+
+This program can be viewed and deployed using most internet browsers via the links in the "Getting Started" section.
+
+## Built With
+
+- [VSCode](https://code.visualstudio.com/) - The platform I used for developing this project.
+- [MDN](https://developer.mozilla.org/en-US/) - Used as a reference tool.
+- [GoogleChrome](https://www.google.com/chrome/) - Used for inspector tool and validating the program during development.
+- [NodePackageManager](https://www.npmjs.com/) - Used to install node modules/dependencies
+- [Postman](https://www.getpostman.com/) - A collaboration platform for API development.
+- <!-- ## Contributing
+
+Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us. -->
+
+## Authors
+
+- **Mohamed Essmat** - [MohEssmat](https://github.com/MohEssmat)
+
+<!-- See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project. -->
+
+<!-- ## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details -->

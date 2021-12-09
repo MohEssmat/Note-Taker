@@ -1,31 +1,37 @@
-// Dependencies
-const router = require('express').Router();
+// CREATE (get), READ (post), UPDATE (put), DELETE (delete) => CRUD
 
-const saveData = require('../db/saveData');
 
-// GET request
-router.get('/notes', function (req, res) {
-    saveData
-        .retrieveNotes()
+// ==========
+// DEPENDENCIES
+// ==========
+
+const router = require("express").Router();
+const store = require("./../db/store");
+
+// ==========
+// ROUTES
+// ==========
+
+router.get("/notes", function (req, res) {
+    store
+        .getNotes()
         .then(notes => res.json(notes))
-        .catch(err => res.status(500).json(err));
+        .catch(err => res.status(500).json(err))
 });
 
-// POST request
-router.post('/notes', (req, res) => {
-    saveData
+router.post("/notes", function (req, res) {
+    store
         .addNote(req.body)
-        .then((note) => res.json(note))
-        .catch(err => res.status(500).json(err));
+        .then((notes) => res.json(notes))
+        .catch(err => res.status(500).json(err))
 });
 
-// Bonus - DELETE request
-router.delete('/notes/:id', function (req, res) {
-    saveData
-        .deleteNote(req.params.id)
+router.delete("/notes/:title", function (req, res) {
+    store
+        .deleteNotes(req.params.title)
         .then(() => res.json({ ok: true }))
-        .catch(err => res.status(500).json(err));
+        .catch(err => res.status(500).json(err))
 });
-
 
 module.exports = router;
+
