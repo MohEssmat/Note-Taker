@@ -30,7 +30,7 @@ Below is the link to the project repository, a link to the deployed application 
 
 https://github.com/MohEssmat/note-taker
 
-https://shrouded-chamber-01100.herokuapp.com/
+https://moe-note-taker.herokuapp.com/
 
 ### Development
 
